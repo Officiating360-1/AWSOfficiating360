@@ -17,6 +17,9 @@
       },
       "api": {
         "awsofficiating360": {}
+      },
+      "storage": {
+        "imageresource": {}
       }
     }
   }

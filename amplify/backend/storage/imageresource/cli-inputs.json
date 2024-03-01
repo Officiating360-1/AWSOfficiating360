@@ -1,0 +1,14 @@
+{
+  "resourceName": "imageresource",
+  "policyUUID": "2d5b6c00",
+  "bucketName": "o360-bucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
