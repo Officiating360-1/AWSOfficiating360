@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "awsofficiating360d2143ad5": {}
+      },
+      "api": {
+        "awsofficiating360": {}
       }
     }
   }
