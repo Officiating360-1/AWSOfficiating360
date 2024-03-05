@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './ui-components/Navbar';
+import CollegeQuizzes from './pages/CollegeQuizzes';
+import Home from './pages/Home';
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
 //import { Amplify } from 'aws-amplify';
@@ -76,6 +80,15 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
+      <Router>
+        <div>
+          <Navbar />
+          <Routes>
+            <Route exact path="./pages/Home" component={Home} />
+            <Route path="./pages/CollegeQuizzes" component={CollegeQuizzes} />
+          </Routes>
+        </div>
+      </Router>
       <Heading level={1}>My Notes App</Heading>
       <View  name="image"  as="input"  type="file"  
       style={{ alignSelf: "end" }}
@@ -138,6 +151,7 @@ const App = ({ signOut }) => {
         ))}
       </View>
       <Button onClick={signOut}>Sign Out</Button>
+
     </View>
   );
 };
